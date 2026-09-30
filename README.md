@@ -156,18 +156,6 @@ PDFs/PNGs):
 The numbers in `make_fig_kappa.py` and `make_fig_results_D.py` are copied from the
 run outputs named in each script's header.
 
-## Notes on the evaluation
-
-- The three streams are joined on the nearest timestamp within 300 s; there is no
-  shared key, and one device or host reading can be joined to several network
-  records. Denial-of-service records have no device reading within 300 s and are
-  removed by the join.
-- No raw address or port field is a model input, but seven network features are
-  aggregated per source address, an eighth combines two of them, and the
-  destination port shapes one further feature and four signature scores.
-- The full stream is partly in-sample: the fusion ensemble has seen every normal
-  record. The paper also reports the records unseen by the layer models.
-
 ## Data licence and citation
 
 TON_IoT is © UNSW Canberra. Free use for academic research is granted by its
