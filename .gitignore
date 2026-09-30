@@ -1,0 +1,20 @@
+# raw dataset (download from UNSW; see data/README.md)
+data/TON_IoT/
+# run outputs
+code/models/
+code/plots/
+code/logs/
+code/final_run/
+code/threshold_stress_*/
+code/policy_study_*/
+code/synthetic_data/
+data/processed/export_prep.log
+*.joblib
+*.pkl
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+code/outputs/
+code/test_results.csv
+data/processed/
